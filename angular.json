@@ -86,6 +86,29 @@
           }
         }
       }
+    },
+    "name-panel": {
+      "projectType": "library",
+      "root": "projects/name-panel",
+      "sourceRoot": "projects/name-panel/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/name-panel/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/name-panel/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/name-panel/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
     }
   }
 }

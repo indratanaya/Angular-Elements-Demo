@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-name-panel',
+  selector: 'lib-name-panel',
   templateUrl: './name-panel.component.html',
   styleUrls: ['./name-panel.component.css'],
+  encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class NamePanelComponent {
   names = ['james', 'alex', 'ron'];

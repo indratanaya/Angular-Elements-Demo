@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NamePanelModule } from 'projects/name-panel/src/public-api';
 
 import { AppComponent } from './app.component';
-import { NamePanelComponent } from './name-panel/name-panel.component';
 
 @NgModule({
-  declarations: [AppComponent, NamePanelComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, NamePanelModule],
   providers: [],
   bootstrap: [AppComponent],
 })
