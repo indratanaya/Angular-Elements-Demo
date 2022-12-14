@@ -199,6 +199,37 @@
           }
         }
       }
+    },
+    "identity-panel": {
+      "projectType": "library",
+      "root": "projects/identity-panel",
+      "sourceRoot": "projects/identity-panel/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/identity-panel/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/identity-panel/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/identity-panel/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/identity-panel/src/test.ts",
+            "tsConfig": "projects/identity-panel/tsconfig.spec.json",
+            "karmaConfig": "projects/identity-panel/karma.conf.js"
+          }
+        }
+      }
     }
   }
 }

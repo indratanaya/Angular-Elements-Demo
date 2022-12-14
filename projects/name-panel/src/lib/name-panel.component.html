@@ -1,4 +1,5 @@
 <div id="name-panel">
   <h1>{{ names[sltNameIndex] }}</h1>
   <button (click)="switchName()">Switch name!</button>
+  <lib-identity-panel [name]="names[sltNameIndex]"></lib-identity-panel>
 </div>
