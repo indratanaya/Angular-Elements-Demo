@@ -20,7 +20,11 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.css"],
-            "scripts": []
+            "scripts": [
+              "dist/name-panel-wc/runtime.d639fd10ef533c1b.js",
+              "dist/name-panel-wc/polyfills.42f59f79cdba9892.js",
+              "dist/name-panel-wc/main.6e253245f38795c3.js"
+            ]
           },
           "configurations": {
             "production": {
